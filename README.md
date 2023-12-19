@@ -14,3 +14,4 @@
 |  T3Import.maxpat   | Read the values sent on an USB bus by the [T3 head tracker](http://feichter-audio.com/produits/diffusion/t3/ "T3 head tracker") and output them as quaternions. |
 |  T3ToQuaternion.maxpat  |  Converts the data from the [T3 head tracker](http://feichter-audio.com/produits/diffusion/t3/ "T3 head tracker") to quaternions. |
 |  TextWriter.maxpat  |  Automatically updates a text file with the text passed as input. |
+|  WithinRange.maxpat  |  Checks if the input value is within a given range. |
