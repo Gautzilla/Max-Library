@@ -11,6 +11,8 @@
 |  QuaternionInnerProduct.maxpat  | Computes the inner product $\left \langle  q_1,q_2 \right \rangle$ between two quaternions: $w_1w_2 + x_1x_2 + y_1y_2 + z_1z_2$  |
 |  QuaternionOrigin.maxpat  |  Resets the quaternion origin on bang, according to the input quaternion. |
 |  QuaternionToToscA.maxpat  |  Sends quaternions as euler angles to ToscA, for writing YPR automations. |
+|  ReaperRecorder.maxpat|  Provides options for toggling rec and play on a reaper session, along with a take system that jumps to a given take on the track.  |
+|  ReaperYawPitchRoll.maxpat |  Sends yaw, pitch and roll informations as OSC messages: inputs $\in[-180.,180.]$, outputs $\in[0.,1.]$. |
 |  T3ControleConnexion.maxpat *(old)* |  Warns the user if the connection with the [T3 head tracker](http://feichter-audio.com/produits/diffusion/t3/ "T3 head tracker") is lost.  |
 |  T3Import.maxpat   | Read the values sent on an USB bus by the [T3 head tracker](http://feichter-audio.com/produits/diffusion/t3/ "T3 head tracker") and output them as quaternions. |
 |  T3ToQuaternion.maxpat  |  Converts the data from the [T3 head tracker](http://feichter-audio.com/produits/diffusion/t3/ "T3 head tracker") to quaternions. |
