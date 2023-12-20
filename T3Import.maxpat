@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -263.0, 1614.0, 1015.0 ],
+		"rect" : [ 1954.0, -281.0, 1610.0, 1011.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -76,11 +76,11 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Start/Stop data capture",
-					"comment" : "Start/Stop data capture",
-					"hint" : "Start/Stop data capture",
+					"annotation" : "Sets the polling interval (ms)",
+					"comment" : "Sets the polling interval (ms)",
+					"hint" : "Sets the polling interval (ms)",
 					"id" : "obj-28",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -95,11 +95,11 @@
 					"comment" : "Start/Stop data capture",
 					"hint" : "Start/Stop data capture",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 30.0, 90.0, 30.0, 30.0 ]
 				}
 
@@ -146,7 +146,7 @@
 					"comment" : "Normalized quaternion repersenting the T3 orientation",
 					"hint" : "Normalized quaternion repersenting the T3 orientation",
 					"id" : "obj-62",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -670,15 +670,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "T3ToQuaternion.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -748,8 +739,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
