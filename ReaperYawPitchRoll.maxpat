@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1946.0, -262.0, 1610.0, 1012.0 ],
+		"rect" : [ 1954.0, -281.0, 1610.0, 1011.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -79,11 +79,11 @@
 					"comment" : "Roll (+-180°)",
 					"hint" : "Roll (+-180°)",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 345.0, 60.0, 30.0, 30.0 ]
 				}
 
@@ -94,7 +94,7 @@
 					"comment" : "Pitch (+-180°)",
 					"hint" : "Pitch (+-180°)",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -109,11 +109,11 @@
 					"comment" : "Yaw (+-180°) ; port i sets UDPsend to port i",
 					"hint" : "Yaw (+-180°)",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 165.0, 60.0, 30.0, 30.0 ]
 				}
 
@@ -125,8 +125,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 347.0, 219.0, 74.0, 23.0 ],
-					"text" : "f/pitch $1"
+					"patching_rect" : [ 347.0, 219.0, 68.0, 23.0 ],
+					"text" : "f/roll $1"
 				}
 
 			}
@@ -137,8 +137,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.0, 219.0, 68.0, 23.0 ],
-					"text" : "f/roll $1"
+					"patching_rect" : [ 257.0, 219.0, 74.0, 23.0 ],
+					"text" : "f/pitch $1"
 				}
 
 			}
@@ -247,7 +247,6 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 15.0, 405.0, 161.0 ],
-					"presentation_linecount" : 11,
 					"suppressinlet" : 1,
 					"text" : "In REAPER :\n\nAdd a new OSC device, mode localhost.\nIn the used Pattern Config (or in the default pattern config), add 3 controls:\nf/yaw\nf/pitch\nf/roll\n\nBind the desired automation controls to these inlets, with the MIDI learn button in REAPER."
 				}
@@ -399,8 +398,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
