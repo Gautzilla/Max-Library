@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1482.0, 939.0 ],
-		"bglocked" : 1,
+		"rect" : [ 1954.0, -281.0, 1610.0, 1011.0 ],
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 1,
@@ -55,7 +55,7 @@
 					"comment" : "0: automation read 1: automation write",
 					"hint" : "0: automation read 1: automation write",
 					"id" : "obj-54",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -261,6 +261,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"id" : "obj-39",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -270,13 +271,17 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 120.0, 30.0, 60.0, 35.0 ],
-					"text" : "take length"
+					"text" : "take length",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"format" : 6,
+					"htricolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
 					"id" : "obj-38",
 					"maxclass" : "flonum",
 					"numinlets" : 1,
@@ -285,25 +290,32 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 435.0, 195.0, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 120.0, 0.0, 50.0, 23.0 ]
+					"presentation_rect" : [ 127.5, 4.0, 45.0, 23.0 ],
+					"textcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"tricolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"id" : "obj-34",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 630.0, 195.0, 45.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 30.0, 45.0, 21.0 ],
-					"text" : "take"
+					"presentation_rect" : [ 180.0, 30.0, 60.0, 21.0 ],
+					"text" : "take",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"htricolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -312,25 +324,32 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 570.0, 195.0, 50.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 0.0, 50.0, 23.0 ]
+					"presentation_rect" : [ 185.0, 4.0, 50.0, 23.0 ],
+					"textcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"tricolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"id" : "obj-27",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 255.0, 90.0, 45.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 30.0, 45.0, 21.0 ],
-					"text" : "rec"
+					"presentation_rect" : [ 60.0, 30.0, 60.0, 21.0 ],
+					"text" : "rec",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"checkedcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
 					"id" : "obj-28",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -339,25 +358,31 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 225.0, 90.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 59.788734436035156, 0.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 78.0, 4.0, 24.0, 24.0 ],
+					"uncheckedcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 135.0, 120.0, 45.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 30.0, 45.0, 21.0 ],
-					"text" : "play"
+					"presentation_rect" : [ 0.0, 30.0, 60.0, 21.0 ],
+					"text" : "play",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"checkedcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
 					"id" : "obj-24",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -366,7 +391,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 105.0, 120.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 18.0, 4.0, 24.0, 24.0 ],
+					"uncheckedcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ]
 				}
 
 			}
@@ -606,7 +632,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -646,7 +672,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -661,7 +687,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -676,7 +702,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -744,6 +770,26 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 30.0, 90.0, 101.0, 23.0 ],
 					"text" : "routepass port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"background" : 1,
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"border" : 1,
+					"bordercolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"id" : "obj-9",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 270.0, 15.0, 120.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 240.0, 75.0 ],
+					"proportion" : 0.5,
+					"prototypename" : "backgroundPanel"
 				}
 
 			}
@@ -934,8 +980,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 15.0, 375.0, 270.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 270.0, 75.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -1297,6 +1341,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
