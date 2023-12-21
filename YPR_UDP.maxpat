@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -278.0, 1615.0, 1004.0 ],
+		"rect" : [ 1954.0, -278.0, 1618.0, 1004.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -32,12 +32,169 @@
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
-		"description" : "",
+		"description" : "All-in-one capture/send of T3 info to Reaper",
 		"digest" : "",
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "ManipAliasingSpatial",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 375.0, 345.0, 35.0, 23.0 ],
+					"text" : "t 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 330.0, 345.0, 35.0, 23.0 ],
+					"text" : "t 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 285.0, 345.0, 35.0, 23.0 ],
+					"text" : "t 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
+					"fontsize" : 8.0,
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 375.0, 300.0, 30.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.0, 90.0, 15.0, 16.0 ],
+					"text" : "R",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
+					"fontsize" : 8.0,
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 330.0, 300.0, 30.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 135.0, 90.0, 15.0, 16.0 ],
+					"text" : "P",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
+					"fontsize" : 8.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 285.0, 300.0, 30.0, 16.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.000007629394531, 90.0, 15.0, 16.0 ],
+					"text" : "Y",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"blinkcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 375.0, 270.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.0, 75.0, 15.0, 15.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"blinkcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
+					"id" : "obj-6",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 330.0, 270.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 135.0, 75.0, 15.0, 15.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
+					"fontsize" : 8.0,
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 225.0, 53.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 45.0, 75.0, 74.0, 25.0 ],
+					"text" : "PING \n(MIDI assign)",
+					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+					"blinkcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 285.0, 270.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 120.000007629394531, 75.0, 15.0, 15.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
 					"id" : "obj-29",
@@ -119,7 +276,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -133,7 +290,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -148,11 +305,11 @@
 					"comment" : "Toggle DJI control",
 					"hint" : "Toggle DJI control",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 60.0, 105.0, 30.0, 30.0 ]
 				}
 
@@ -294,7 +451,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 15.0, 195.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 165.0, 75.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 165.0, 105.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -426,8 +583,50 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 2 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -439,36 +638,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "T3Import.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3ToQuaternion.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperYawPitchRoll.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionOrigin.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
