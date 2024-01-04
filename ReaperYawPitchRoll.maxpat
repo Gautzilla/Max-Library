@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -281.0, 1610.0, 1011.0 ],
+		"rect" : [ 42.0, 85.0, 1852.0, 939.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,37 +39,15 @@
 		"subpatcher_template" : "ManipAliasingSpatial",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 45.0, 120.0, 101.0, 23.0 ],
-					"text" : "routepass port"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 255.0, 55.0, 23.0 ],
-					"text" : "port $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
+					"annotation" : "OSC messages to send to Reaper",
+					"comment" : "OSC messages to send to Reaper",
+					"hint" : "OSC messages to send to Reaper",
+					"id" : "obj-1",
+					"index" : 1,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 45.0, 225.0, 114.0, 23.0 ],
-					"text" : "patcherargs 8000"
+					"numoutlets" : 0,
+					"patching_rect" : [ 165.0, 285.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -98,7 +76,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 255.0, 60.0, 30.0, 30.0 ]
 				}
 
@@ -151,17 +129,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 167.0, 219.0, 61.0, 23.0 ],
 					"text" : "f/yaw $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-105",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 285.0, 154.0, 23.0 ],
-					"text" : "udpsend localhost 8000"
 				}
 
 			}
@@ -315,56 +282,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-110", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-113", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-115", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
-					"source" : [ "obj-14", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
