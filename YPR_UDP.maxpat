@@ -412,7 +412,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 240.0, 30.0, 30.0 ]
+					"patching_rect" : [ 180.0, 225.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -542,13 +542,23 @@
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-8",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "T3Import.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "list" ],
-					"patching_rect" : [ 135.0, 285.0, 61.0, 23.0 ],
-					"text" : "T3Import"
+					"patching_rect" : [ 135.0, 270.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 120.0, 180.0, 30.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -598,7 +608,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 15.0, 195.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 165.0, 105.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 180.0, 150.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
