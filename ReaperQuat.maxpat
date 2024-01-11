@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1852.0, 939.0 ],
-		"openrect" : [ 0.0, 0.0, 240.0, 105.0 ],
+		"rect" : [ 34.0, 77.0, 951.0, 939.0 ],
+		"openrect" : [ 0.0, 0.0, 450.0, 106.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -279,7 +279,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 75.0, 165.0, 285.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 285.0, 105.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 285.0, 75.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -309,7 +309,8 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"bgcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"bordercolor" : [ 0.290196078431373, 0.443137254901961, 0.427450980392157, 0.0 ],
 					"id" : "obj-8",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -317,7 +318,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 120.0, 450.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 405.0, 105.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 90.0 ],
 					"proportion" : 0.5
 				}
 
