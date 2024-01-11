@@ -46,7 +46,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 90.0, 81.0, 23.0 ],
+					"patching_rect" : [ 15.0, 90.0, 95.0, 23.0 ],
 					"text" : "r #0UDPPort"
 				}
 
@@ -59,7 +59,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.0, 60.0, 81.0, 23.0 ],
+					"patching_rect" : [ 315.0, 60.0, 95.0, 23.0 ],
 					"text" : "r #0UDPPort"
 				}
 
@@ -71,7 +71,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 555.0, 255.0, 81.0, 23.0 ],
+					"patching_rect" : [ 555.0, 255.0, 95.0, 23.0 ],
 					"text" : "s #0UDPPort"
 				}
 
@@ -83,7 +83,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 255.0, 81.0, 23.0 ],
+					"patching_rect" : [ 270.0, 255.0, 95.0, 23.0 ],
 					"text" : "s #0UDPPort"
 				}
 
@@ -118,7 +118,7 @@
 					"comment" : "T3 orientation (Quaternion)",
 					"hint" : "T3 orientation (Quaternion)",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -132,7 +132,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -146,7 +146,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -161,7 +161,7 @@
 					"comment" : "Toggle DJI control",
 					"hint" : "Toggle DJI control",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -176,7 +176,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -191,7 +191,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -206,7 +206,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -221,7 +221,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -301,7 +301,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 375.0, 135.0, 165.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 0.0, 165.0, 150.0 ],
+					"presentation_rect" : [ 285.0, 0.0, 180.0, 150.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -437,57 +437,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "YPR_UDP.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3Import.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3ToQuaternion.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperYawPitchRoll.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionOrigin.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "UDPSender.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperRecorder.maxpat",
-				"bootpath" : "~/source/repos/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
