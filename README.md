@@ -4,6 +4,7 @@
 
 |  Patcher Name | Patcher Description  |
 | :------------ | :------------ |
+| Differentiate.maxpat  | Outputs the differentiate (di/dt) of the input floats.  |
 | Extremes.maxpat  | Outputs the minimum and maximum of the input values.  |
 | MovingAverage.maxpat  |  Outputs the moving average of the input values, with a configurable window size. |
 | QuaternionAngularDifference.maxpat   | Computes the rotation angle between two quaternions: $\cos^{-1}(2\left \langle  q_1,q_2 \right \rangle^2 - 1)$|
