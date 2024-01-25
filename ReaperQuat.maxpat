@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -281.0, 1980.0, 1011.0 ],
-		"openrect" : [ 0.0, 0.0, 466.04278028011322, 196.058822154998779 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 939.0 ],
+		"openrect" : [ 0.0, 0.0, 466.04278028011322, 226.058822154998779 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,11 +41,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 135.0, 285.0, 35.0, 23.0 ],
+					"text" : "!= 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "Take index",
 					"comment" : "Take index",
 					"hint" : "Take index",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -60,7 +72,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 105.0, 345.0, 35.0, 23.0 ],
+					"patching_rect" : [ 105.0, 375.0, 35.0, 23.0 ],
 					"text" : "== 2"
 				}
 
@@ -72,7 +84,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 75.0, 315.0, 41.0, 23.0 ],
+					"patching_rect" : [ 75.0, 345.0, 41.0, 23.0 ],
 					"text" : "sel 1"
 				}
 
@@ -84,7 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 105.0, 285.0, 35.0, 23.0 ],
+					"patching_rect" : [ 90.0, 285.0, 35.0, 23.0 ],
 					"text" : "== 2"
 				}
 
@@ -94,10 +106,10 @@
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 75.0, 255.0, 41.0, 23.0 ],
-					"text" : "t i i"
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 75.0, 255.0, 55.0, 23.0 ],
+					"text" : "t i i i"
 				}
 
 			}
@@ -169,7 +181,7 @@
 					"comment" : "T3 orientation (Quaternion)",
 					"hint" : "T3 orientation (Quaternion)",
 					"id" : "obj-22",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -183,7 +195,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -197,7 +209,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -212,7 +224,7 @@
 					"comment" : "Toggle DJI control",
 					"hint" : "Toggle DJI control",
 					"id" : "obj-16",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -227,7 +239,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -242,7 +254,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -257,7 +269,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -272,7 +284,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -348,13 +360,13 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "YPR_UDP.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int", "" ],
 					"patching_rect" : [ 375.0, 135.0, 165.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 285.0, 0.0, 180.213898479938507, 195.0 ],
+					"presentation_rect" : [ 285.0, 0.0, 180.0, 225.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -400,6 +412,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-11", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-12", 1 ]
 				}
@@ -421,7 +440,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 2 ],
+					"destination" : [ "obj-2", 3 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -444,6 +463,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 2 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -525,6 +551,71 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "Differentiate.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MovingAverage.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "QuaternionOrigin.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ReaperInstrForm.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ReaperRecorder.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "T3Import.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "T3ToQuaternion.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "UDPSender.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "YPR_UDP.maxpat",
+				"bootpath" : "~/source/repos/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
