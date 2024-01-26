@@ -41,6 +41,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "Toggle YPR output",
+					"comment" : "Toggle YPR output",
+					"hint" : "Toggle YPR output",
+					"id" : "obj-26",
+					"index" : 6,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 420.0, 90.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -69,7 +84,7 @@
 					"comment" : "Control mode (0 : position ; 1 : speed)",
 					"hint" : "Control mode (0 : position ; 1 : speed)",
 					"id" : "obj-15",
-					"index" : 6,
+					"index" : 7,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -248,7 +263,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 7,
+					"index" : 8,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -259,9 +274,9 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Toggle DJI control",
-					"comment" : "Toggle DJI control",
-					"hint" : "Toggle DJI control",
+					"annotation" : "Toggle YPR input\n",
+					"comment" : "Toggle YPR input",
+					"hint" : "Toggle YPR input",
 					"id" : "obj-16",
 					"index" : 5,
 					"maxclass" : "inlet",
@@ -537,6 +552,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
