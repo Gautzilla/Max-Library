@@ -149,7 +149,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 570.0, 195.0, 75.0, 37.0 ],
-					"restore" : [ 3 ],
+					"restore" : [ 2 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -568,6 +568,7 @@
 					"htricolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
 					"id" : "obj-30",
 					"maxclass" : "number",
+					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
