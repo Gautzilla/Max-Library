@@ -41,61 +41,66 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-93",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 690.0, 900.0, 81.0, 23.0 ],
-					"text" : "prepend set"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1080.0, 735.0, 266.0, 23.0 ],
+					"text" : "GUIforward mira_take recorder::num_take",
+					"varname" : "GUIforward[4]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-92",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 601.0, 895.0, 81.0, 23.0 ],
-					"text" : "prepend set"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1080.0, 615.0, 319.0, 23.0 ],
+					"text" : "GUIforward mira_toggle_rec recorder::toggle_rec",
+					"varname" : "GUIforward[3]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-20",
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-87",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 675.0, 735.0, 81.0, 23.0 ],
-					"text" : "prepend set"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1080.0, 645.0, 332.0, 23.0 ],
+					"text" : "GUIforward mira_toggle_play recorder::toggle_play",
+					"varname" : "GUIforward[2]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-19",
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-86",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 585.0, 750.0, 81.0, 23.0 ],
-					"text" : "prepend set"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1080.0, 705.0, 319.0, 23.0 ],
+					"text" : "GUIforward mira_toggle_to controller::toggle_to",
+					"varname" : "GUIforward[1]"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-59",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 825.0, 765.0, 81.0, 23.0 ],
-					"text" : "prepend set"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1080.0, 675.0, 345.0, 23.0 ],
+					"text" : "GUIforward mira_toggle_from controller::toggle_from",
+					"varname" : "GUIforward"
 				}
 
 			}
@@ -114,133 +119,13 @@
 			}
 , 			{
 				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
-					"id" : "obj-180",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 690.0, 840.0, 90.0, 51.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr _ controller::toggle_to",
-					"varname" : "_[4]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
-					"id" : "obj-179",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 600.0, 840.0, 90.131578087806702, 51.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr _ controller::toggle_from",
-					"varname" : "_[3]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
-					"id" : "obj-173",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 825.0, 705.0, 75.0, 51.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr _ recorder::num_take",
-					"varname" : "_[2]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
-					"id" : "obj-172",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 675.0, 675.0, 75.0, 51.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr _ recorder::toggle_rec",
-					"varname" : "_[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
-					"id" : "obj-170",
-					"linecount" : 4,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 585.0, 675.0, 75.0, 65.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr _ recorder::toggle_play",
-					"varname" : "_"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-141",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 480.0, 90.0, 160.0, 23.0 ],
-					"restore" : [ 1 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -296,7 +181,7 @@
 
 					}
 ,
-					"varname" : "toggle[4]"
+					"varname" : "mira_toggle_to"
 				}
 
 			}
@@ -320,7 +205,7 @@
 
 					}
 ,
-					"varname" : "toggle[3]"
+					"varname" : "mira_toggle_from"
 				}
 
 			}
@@ -439,7 +324,7 @@
 
 					}
 ,
-					"varname" : "number"
+					"varname" : "mira_take"
 				}
 
 			}
@@ -463,7 +348,7 @@
 
 					}
 ,
-					"varname" : "toggle[2]"
+					"varname" : "mira_toggle_rec"
 				}
 
 			}
@@ -487,7 +372,7 @@
 
 					}
 ,
-					"varname" : "toggle[1]"
+					"varname" : "mira_toggle_play"
 				}
 
 			}
@@ -743,7 +628,7 @@
 					"comment" : "Toggle YPR output",
 					"hint" : "Toggle YPR output",
 					"id" : "obj-26",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -758,7 +643,7 @@
 					"comment" : "Control mode (0 : position ; 1 : speed)",
 					"hint" : "Control mode (0 : position ; 1 : speed)",
 					"id" : "obj-15",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -773,7 +658,7 @@
 					"comment" : "Take index",
 					"hint" : "Take index",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -849,7 +734,7 @@
 					"comment" : "T3 orientation (Quaternion)",
 					"hint" : "T3 orientation (Quaternion)",
 					"id" : "obj-22",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -863,7 +748,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -877,7 +762,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -892,7 +777,7 @@
 					"comment" : "Toggle YPR input",
 					"hint" : "Toggle YPR input",
 					"id" : "obj-16",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -907,7 +792,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -922,7 +807,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -937,7 +822,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -952,7 +837,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1231,33 +1116,13 @@
 					"maxclass" : "mira.frame",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 570.0, 615.0, 337.582426071166992, 240.0 ]
+					"patching_rect" : [ 570.0, 615.0, 337.582427978515625, 240.00000135600564 ],
+					"tabname" : "Recorder"
 				}
 
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-180", 0 ],
-					"source" : [ "obj-107", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-170", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 2 ],
 					"source" : [ "obj-141", 0 ]
@@ -1287,50 +1152,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-170", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-172", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-173", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-179", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-180", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-182", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1359,27 +1182,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-2", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-98", 0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -1441,23 +1243,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-172", 0 ],
-					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-173", 0 ],
-					"order" : 0,
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-89", 1 ],
-					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1637,14 +1423,100 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-179", 0 ],
-					"source" : [ "obj-98", 0 ]
+ ],
+		"parameters" : 		{
+			"obj-107" : [ "toggle[6]", "toggle[2]", 0 ],
+			"obj-117" : [ "umenu", "umenu", 0 ],
+			"obj-12" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-31" : [ "toggle[3]", "toggle[2]", 0 ],
+			"obj-36" : [ "number[9]", "number[9]", 0 ],
+			"obj-47" : [ "button[5]", "button[5]", 0 ],
+			"obj-49" : [ "button[4]", "button[4]", 0 ],
+			"obj-98" : [ "toggle[5]", "toggle[2]", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
 				}
 
 			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "Differentiate.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "GUIforward.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MovingAverage.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "QuaternionOrigin.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ReaperMIDICtrl.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ReaperRecorder.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "T3Import.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "T3ToQuaternion.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "UDPSender.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "YPR_UDP.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
  ],
+		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],
