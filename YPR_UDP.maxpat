@@ -40,6 +40,10 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"frozen_object_attributes" : 					{
+						"autorestore" : 0
+					}
+,
 					"id" : "obj-84",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -60,6 +64,10 @@
 			}
 , 			{
 				"box" : 				{
+					"frozen_object_attributes" : 					{
+						"autorestore" : 0
+					}
+,
 					"id" : "obj-81",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -80,6 +88,10 @@
 			}
 , 			{
 				"box" : 				{
+					"frozen_object_attributes" : 					{
+						"autorestore" : 0
+					}
+,
 					"id" : "obj-79",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -694,7 +706,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -0.662649631500244, 150.0, 105.116279304027557, 34.0 ],
 					"size" : 2,
-					"value" : 0
+					"value" : 1
 				}
 
 			}
