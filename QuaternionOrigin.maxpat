@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -278.0, 1613.0, 1004.0 ],
+		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,14 +37,27 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "ManipAliasingSpatial",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 210.0, 120.0, 41.0, 23.0 ],
+					"text" : "sel 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "" ],
-					"patching_rect" : [ 47.0, 225.0, 272.0, 23.0 ],
+					"patching_rect" : [ 47.0, 240.0, 272.0, 23.0 ],
 					"text" : "jit.quat @quat2 0. 0. 0. 1. @normalize 1"
 				}
 
@@ -68,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 212.0, 180.0, 94.0, 23.0 ],
+					"patching_rect" : [ 210.0, 210.0, 94.0, 23.0 ],
 					"text" : "route inverse"
 				}
 
@@ -80,7 +93,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "" ],
-					"patching_rect" : [ 212.0, 150.0, 62.0, 23.0 ],
+					"patching_rect" : [ 210.0, 180.0, 62.0, 23.0 ],
 					"text" : "jit.quat"
 				}
 
@@ -92,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 212.0, 120.000015258789063, 101.0, 23.0 ],
+					"patching_rect" : [ 210.0, 150.0, 101.0, 23.0 ],
 					"text" : "t getinverse l"
 				}
 
@@ -105,7 +118,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.0, 90.0, 35.0, 23.0 ],
+					"patching_rect" : [ 210.0, 90.0, 35.0, 23.0 ],
 					"text" : "pv q"
 				}
 
@@ -114,11 +127,11 @@
 				"box" : 				{
 					"comment" : "Centered quaternion",
 					"id" : "obj-35",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 47.0, 255.0, 30.0, 30.0 ]
+					"patching_rect" : [ 47.0, 270.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -128,12 +141,12 @@
 					"comment" : "Bang for resetting origin",
 					"hint" : "Bang for resetting origin",
 					"id" : "obj-34",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.0, 45.0, 30.0, 30.0 ]
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 210.0, 45.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -141,11 +154,11 @@
 				"box" : 				{
 					"comment" : "Quaternion in",
 					"id" : "obj-33",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "list" ],
 					"patching_rect" : [ 47.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -176,7 +189,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 15.0, 315.0, 285.0 ],
+					"patching_rect" : [ 15.0, 15.0, 315.0, 300.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -199,7 +212,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -222,6 +235,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-38", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -254,8 +274,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -325,8 +343,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

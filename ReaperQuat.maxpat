@@ -41,6 +41,85 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 375.0, 735.0, 41.0, 23.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 375.0, 705.0, 107.0, 23.0 ],
+					"text" : "udpreceive 4000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1155.0, 600.0, 187.0, 37.0 ],
+					"text" : "GUIforward mira_bang_reset controller::bang_reset",
+					"varname" : "GUIforward[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 975.0, 540.0, 75.0, 21.0 ],
+					"text" : "RESET",
+					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"id" : "obj-29",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.549019607843137, 0.670588235294118, 0.631372549019608, 1.0 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 975.0, 510.0, 75.0, 75.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "button[7]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "button[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "mira_bang_reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-105",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -72,7 +151,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1380.0, 375.0, 135.0, 37.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -92,7 +171,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1529.999998569488525, 375.0, 120.0, 37.0 ],
-					"restore" : [ 0.0 ],
+					"restore" : [ 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -111,7 +190,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1470.131578087806702, 509.210525035858154, 121.0, 23.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -566,7 +645,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1080.0, 480.394736409187317, 44.736842393875122, 44.736842393875122 ],
+					"patching_rect" : [ 1080.0, 480.0, 44.736842393875122, 44.736842393875122 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -1589,6 +1668,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -1823,6 +1909,7 @@
 			"obj-107" : [ "toggle[6]", "toggle[2]", 0 ],
 			"obj-117" : [ "umenu", "umenu", 0 ],
 			"obj-12" : [ "toggle[2]", "toggle[2]", 0 ],
+			"obj-29" : [ "button[7]", "button[5]", 0 ],
 			"obj-31" : [ "toggle[3]", "toggle[2]", 0 ],
 			"obj-36" : [ "number[9]", "number[9]", 0 ],
 			"obj-47" : [ "button[5]", "button[5]", 0 ],
