@@ -64,10 +64,6 @@
 			}
 , 			{
 				"box" : 				{
-					"frozen_object_attributes" : 					{
-						"autorestore" : 0
-					}
-,
 					"id" : "obj-81",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -81,7 +77,7 @@
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "pattr _ bang_reset",
+					"text" : "pattr _ btn_reset",
 					"varname" : "_[1]"
 				}
 
@@ -232,7 +228,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 450.0, 255.0, 30.0, 30.0 ]
 				}
 
@@ -635,7 +631,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 45.0, 344.629628658294678, 48.0, 23.0 ],
+					"patching_rect" : [ 45.0, 300.0, 48.0, 23.0 ],
 					"text" : "t 1 10"
 				}
 
@@ -647,7 +643,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 45.0, 315.0, 61.0, 23.0 ],
+					"patching_rect" : [ 45.0, 270.0, 61.0, 23.0 ],
 					"text" : "loadbang"
 				}
 
@@ -663,7 +659,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 104.444442987442017, 389.814814329147339, 44.594594568014145, 23.0 ],
+					"patching_rect" : [ 104.0, 390.0, 44.594594568014145, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 59.578310489654541, 165.662649631500244, 44.594594568014145, 23.0 ],
 					"textcolor" : [ 0.811764705882353, 0.494117647058824, 0.247058823529412, 1.0 ],
@@ -702,11 +698,12 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 44.444444954395294, 375.0, 105.116279304027557, 34.0 ],
+					"patching_rect" : [ 45.0, 375.0, 105.116279304027557, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.662649631500244, 150.0, 105.116279304027557, 34.0 ],
 					"size" : 2,
-					"value" : 1
+					"value" : 0,
+					"varname" : "radbtn_mode"
 				}
 
 			}
@@ -1271,7 +1268,7 @@
 					"patching_rect" : [ 930.0, 795.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 63.0, 0.0, 24.0, 24.0 ],
-					"varname" : "bang_reset"
+					"varname" : "btn_reset"
 				}
 
 			}
@@ -2139,10 +2136,6 @@
 					"source" : [ "obj-98", 0 ]
 				}
 
-			}
- ],
-		"boxgroups" : [ 			{
-				"boxes" : [ "obj-54", "obj-49", "obj-51" ]
 			}
  ],
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],

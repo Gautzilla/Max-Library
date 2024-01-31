@@ -10,8 +10,8 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
-		"openrect" : [ 0.0, 0.0, 466.04278028011322, 226.058822154998779 ],
+		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
+		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,24 +41,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-37",
+					"color" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"id" : "obj-44",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 735.0, 41.0, 23.0 ],
-					"text" : "print"
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.0, 90.0, 121.0, 23.0 ],
+					"text" : "r #0controlMode"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
 					"id" : "obj-35",
+					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.0, 705.0, 107.0, 23.0 ],
-					"text" : "udpreceive 4000"
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1155.0, 645.0, 187.0, 37.0 ],
+					"text" : "GUIforward mira_umenu_mode controller::radbtn_mode",
+					"varname" : "GUIforward[6]"
 				}
 
 			}
@@ -70,8 +74,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1155.0, 600.0, 187.0, 37.0 ],
-					"text" : "GUIforward mira_bang_reset controller::bang_reset",
+					"patching_rect" : [ 1155.0, 600.0, 210.0, 37.0 ],
+					"text" : "GUIforwardBang mira_btn_reset controller::btn_reset",
 					"varname" : "GUIforward[5]"
 				}
 
@@ -85,36 +89,11 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 975.0, 540.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 210.0, 360.0, 75.0, 21.0 ],
 					"text" : "RESET",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
-					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
-					"id" : "obj-29",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"outlinecolor" : [ 0.549019607843137, 0.670588235294118, 0.631372549019608, 1.0 ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 975.0, 510.0, 75.0, 75.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "button[7]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "button[5]",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "mira_bang_reset"
 				}
 
 			}
@@ -151,7 +130,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1380.0, 375.0, 135.0, 37.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -171,7 +150,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1529.999998569488525, 375.0, 120.0, 37.0 ],
-					"restore" : [ 1.0 ],
+					"restore" : [ 0.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -190,7 +169,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1470.131578087806702, 509.210525035858154, 121.0, 23.0 ],
-					"restore" : [ 1 ],
+					"restore" : [ 16 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -210,6 +189,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 990.0, 450.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 270.0, 75.0, 21.0 ],
 					"text" : "TAKE",
 					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"textjustification" : 1
@@ -305,6 +286,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1020.0, 600.0, 90.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 255.0, 420.0, 90.0, 21.0 ],
 					"text" : "Control Mode",
 					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 					"textjustification" : 2
@@ -320,6 +303,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 870.0, 645.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.0, 465.0, 75.0, 21.0 ],
 					"text" : "TO",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -335,6 +320,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 645.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 465.0, 75.0, 21.0 ],
 					"text" : "FROM",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -350,6 +337,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 870.0, 480.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.0, 300.0, 75.0, 21.0 ],
 					"text" : "REC",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -365,6 +354,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 480.0, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 300.0, 75.0, 21.0 ],
 					"text" : "PLAY",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -456,25 +447,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-141",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 480.0, 90.0, 160.0, 23.0 ],
-					"restore" : [ 0 ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr whatever ctrlMode",
-					"varname" : "whatever"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -491,6 +463,8 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1005.0, 630.0, 105.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 240.0, 450.0, 105.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Position", "Speed" ],
@@ -503,7 +477,7 @@
 					}
 ,
 					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"varname" : "ctrlMode"
+					"varname" : "mira_umenu_mode"
 				}
 
 			}
@@ -518,6 +492,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 870.0, 585.0, 75.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.0, 405.0, 75.0, 75.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -544,6 +520,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 795.0, 585.0, 75.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 405.0, 75.0, 75.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -619,6 +597,8 @@
 					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1080.0, 435.0, 44.736842393875122, 44.736842393875122 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 255.0, 44.736842393875122, 44.736842393875122 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -646,6 +626,8 @@
 					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1080.0, 480.0, 44.736842393875122, 44.736842393875122 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 315.0, 300.0, 44.736842393875122, 44.736842393875122 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -672,6 +654,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 990.0, 465.0, 75.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 285.0, 75.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -698,6 +682,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 870.0, 420.0, 75.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.0, 240.0, 75.0, 75.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -724,6 +710,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 795.0, 420.0, 75.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 240.0, 75.0, 75.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -991,7 +979,7 @@
 					"comment" : "Toggle YPR output",
 					"hint" : "Toggle YPR output",
 					"id" : "obj-26",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1006,12 +994,12 @@
 					"comment" : "Control mode (0 : position ; 1 : speed)",
 					"hint" : "Control mode (0 : position ; 1 : speed)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 7,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 480.0, 45.0, 30.0, 30.0 ]
+					"patching_rect" : [ 480.0, 60.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1021,7 +1009,7 @@
 					"comment" : "Take index",
 					"hint" : "Take index",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1097,7 +1085,7 @@
 					"comment" : "T3 orientation (Quaternion)",
 					"hint" : "T3 orientation (Quaternion)",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1111,7 +1099,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1125,7 +1113,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 8,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1140,7 +1128,7 @@
 					"comment" : "Toggle YPR input",
 					"hint" : "Toggle YPR input",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1155,7 +1143,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1170,7 +1158,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1185,7 +1173,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1200,7 +1188,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1315,9 +1303,40 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 570.0, 150.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 390.0, 150.0, 21.0 ],
 					"text" : "Orientation Control",
 					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"id" : "obj-29",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.549019607843137, 0.670588235294118, 0.631372549019608, 1.0 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 975.0, 510.0, 75.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 210.0, 330.0, 75.0, 75.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "button[7]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "button[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "mira_btn_reset"
 				}
 
 			}
@@ -1510,6 +1529,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 420.0, 337.582427978515625, 240.00000135600564 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 240.0, 337.582427978515625, 240.00000135600564 ],
 					"tabname" : "Recorder"
 				}
 
@@ -1527,6 +1548,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 765.0, 360.0, 975.0, 344.736838817596436 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 225.0, 360.0, 270.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -1550,13 +1573,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 2 ],
-					"source" : [ "obj-141", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -1579,13 +1595,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-182", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 0 ],
-					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -1668,13 +1677,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -1684,6 +1686,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 2 ],
+					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -1905,100 +1914,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-107" : [ "toggle[6]", "toggle[2]", 0 ],
-			"obj-117" : [ "umenu", "umenu", 0 ],
-			"obj-12" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-29" : [ "button[7]", "button[5]", 0 ],
-			"obj-31" : [ "toggle[3]", "toggle[2]", 0 ],
-			"obj-36" : [ "number[9]", "number[9]", 0 ],
-			"obj-47" : [ "button[5]", "button[5]", 0 ],
-			"obj-49" : [ "button[4]", "button[4]", 0 ],
-			"obj-98" : [ "toggle[5]", "toggle[2]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "Differentiate.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GUIforward.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MovingAverage.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionOrigin.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperMIDICtrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperRecorder.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3Import.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3ToQuaternion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "UDPSender.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "YPR_UDP.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 		"clearcolor" : [ 1.0, 1.0, 1.0, 0.5 ],
 		"bgcolor" : [ 0.517647058823529, 0.470588235294118, 0.458823529411765, 1.0 ],

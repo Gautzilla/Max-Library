@@ -7,6 +7,7 @@
 | Differentiate.maxpat  | Outputs the differentiate (di/dt) of the input floats.  |
 | Extremes.maxpat  | Outputs the minimum and maximum of the input values.  |
 | GUIforward.maxpat  | Binds two GUI objects.  |
+| GUIforwardBang.maxpat  | Binds two GUI objects that do not display a state.  |
 | ListBucket.maxpat  | Buckets lists, outputting the current and previous input lists.  |
 | MovingAverage.maxpat  |  Outputs the moving average of the input values, with a configurable window size. |
 | QuaternionAngularDifference.maxpat   | Computes the rotation angle between two quaternions: $\cos^{-1}(2\left \langle  q_1,q_2 \right \rangle^2 - 1)$|
