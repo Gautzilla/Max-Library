@@ -41,12 +41,110 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1529.999998569488525, 421.052631139755249, 41.0, 23.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1380.0, 420.394736409187317, 41.0, 23.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-84",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1380.0, 375.0, 135.0, 37.0 ],
+					"restore" : [ 0.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr _ mira_btn_takeDown",
+					"varname" : "_[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1529.999998569488525, 375.0, 120.0, 37.0 ],
+					"restore" : [ 0.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr _ mira_btn_takeUp",
+					"varname" : "_[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1470.131578087806702, 509.210525035858154, 121.0, 23.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr _ mira_take",
+					"varname" : "_[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"id" : "obj-56",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 990.0, 450.0, 75.0, 21.0 ],
+					"text" : "TAKE",
+					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 990.0, 525.0, 68.0, 23.0 ],
+					"patching_rect" : [ 1380.0, 509.868419766426086, 68.0, 23.0 ],
 					"text" : "maximum 0"
 				}
 
@@ -202,7 +300,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 555.0, 147.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 555.263156175613403, 147.0, 37.0 ],
 					"text" : "GUIforward mira_take recorder::num_take",
 					"varname" : "GUIforward[4]"
 				}
@@ -216,7 +314,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 375.0, 187.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 375.0, 187.0, 37.0 ],
 					"text" : "GUIforward mira_toggle_rec recorder::toggle_rec",
 					"varname" : "GUIforward[3]"
 				}
@@ -230,7 +328,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 420.0, 195.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 419.736841678619385, 195.0, 37.0 ],
 					"text" : "GUIforward mira_toggle_play recorder::toggle_play",
 					"varname" : "GUIforward[2]"
 				}
@@ -244,7 +342,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 510.0, 180.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 509.868419766426086, 180.0, 37.0 ],
 					"text" : "GUIforward mira_toggle_to controller::toggle_to",
 					"varname" : "GUIforward[1]"
 				}
@@ -258,7 +356,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1275.0, 465.0, 195.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 465.131578087806702, 195.0, 37.0 ],
 					"text" : "GUIforward mira_toggle_from controller::toggle_from",
 					"varname" : "GUIforward"
 				}
@@ -389,7 +487,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1095.0, 465.0, 35.0, 23.0 ],
+					"patching_rect" : [ 1380.0, 449.999999284744263, 35.0, 23.0 ],
 					"text" : "t -1"
 				}
 
@@ -401,7 +499,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1095.0, 435.0, 28.0, 23.0 ],
+					"patching_rect" : [ 1529.999998569488525, 449.999999284744263, 28.0, 23.0 ],
 					"text" : "t 1"
 				}
 
@@ -413,7 +511,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 990.0, 555.0, 41.0, 23.0 ],
+					"patching_rect" : [ 1380.0, 540.131577372550964, 41.0, 23.0 ],
 					"text" : "t i i"
 				}
 
@@ -425,20 +523,23 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 990.0, 495.0, 29.5, 23.0 ],
+					"patching_rect" : [ 1380.0, 479.605262160301208, 29.5, 23.0 ],
 					"text" : "+"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"id" : "obj-49",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1050.0, 435.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1080.0, 435.0, 44.736842393875122, 44.736842393875122 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -450,19 +551,22 @@
 
 					}
 ,
-					"varname" : "button"
+					"varname" : "mira_btn_takeUp"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"id" : "obj-47",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1050.0, 465.0, 24.0, 24.0 ],
+					"patching_rect" : [ 1080.0, 480.394736409187317, 44.736842393875122, 44.736842393875122 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -474,12 +578,13 @@
 
 					}
 ,
-					"varname" : "button[1]"
+					"varname" : "mira_btn_takeDown"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"id" : "obj-36",
 					"maxclass" : "number",
 					"minimum" : 0,
@@ -487,7 +592,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 990.0, 465.0, 50.0, 23.0 ],
+					"patching_rect" : [ 990.0, 465.0, 75.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -498,6 +603,7 @@
 
 					}
 ,
+					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"varname" : "mira_take"
 				}
 
@@ -1341,7 +1447,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.0, 360.0, 735.0, 345.0 ],
+					"patching_rect" : [ 765.0, 360.0, 975.0, 344.736838817596436 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -1349,6 +1455,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-104", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 2 ],
 					"source" : [ "obj-141", 0 ]
@@ -1469,13 +1589,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-89", 1 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -1504,22 +1617,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1567,8 +1666,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-89", 1 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -1658,7 +1771,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
+					"destination" : [ "obj-104", 0 ],
+					"source" : [ "obj-84", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
 					"source" : [ "obj-88", 1 ]
 				}
 
