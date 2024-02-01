@@ -228,7 +228,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 450.0, 255.0, 30.0, 30.0 ]
 				}
 
@@ -702,7 +702,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -0.662649631500244, 150.0, 105.116279304027557, 34.0 ],
 					"size" : 2,
-					"value" : 0,
+					"value" : 1,
 					"varname" : "radbtn_mode"
 				}
 
@@ -1333,6 +1333,7 @@
 					"patching_rect" : [ 135.0, 240.0, 180.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 195.0, 180.0, 30.0 ],
+					"varname" : "t3Import",
 					"viewvisibility" : 1
 				}
 

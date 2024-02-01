@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1954.0, -278.0, 1082.0, 1004.0 ],
+		"rect" : [ 134.0, 84.0, 1474.0, 979.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "ManipAliasingSpatial",
+		"assistshowspatchername" : 0,
 		"title" : "T3 import",
 		"boxes" : [ 			{
 				"box" : 				{
@@ -48,11 +49,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 555.0, 240.0, 180.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 180.0, 23.0 ],
 					"textcolor" : [ 0.780392156862745, 0.482352941176471, 0.345098039215686, 1.0 ],
-					"tricolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ]
+					"tricolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
+					"varname" : "serport"
 				}
 
 			}
@@ -221,7 +224,7 @@
 					"comment" : "Sets the polling interval (ms)",
 					"hint" : "Sets the polling interval (ms)",
 					"id" : "obj-28",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -236,11 +239,11 @@
 					"comment" : "Start/Stop data capture",
 					"hint" : "Start/Stop data capture",
 					"id" : "obj-9",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 90.0, 30.0, 30.0 ]
 				}
 
@@ -287,7 +290,7 @@
 					"comment" : "Normalized quaternion repersenting the T3 orientation",
 					"hint" : "Normalized quaternion repersenting the T3 orientation",
 					"id" : "obj-62",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -476,7 +479,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 390.0, 240.0, 49.0, 23.0 ],
-					"text" : "serial"
+					"text" : "serial",
+					"varname" : "serial"
 				}
 
 			}
@@ -488,6 +492,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 585.0, 210.0, 150.0, 23.0 ]
 				}
 
@@ -897,6 +902,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "T3ToQuaternion.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -918,8 +932,8 @@
 , 			{
 				"name" : "Default10",
 				"default" : 				{
-					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"fontsize" : [ 10.0 ]
 				}
 ,
 				"parentstyle" : "",
