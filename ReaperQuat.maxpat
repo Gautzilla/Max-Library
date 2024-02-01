@@ -41,6 +41,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"fontsize" : 36.0,
+					"id" : "obj-52",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1095.0, 690.0, 56.0, 49.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 296.5, 298.5, 84.0, 49.0 ],
+					"text" : "-",
+					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"fontsize" : 36.0,
+					"id" : "obj-50",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1095.0, 645.0, 56.0, 49.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 296.75, 256.25, 84.0, 49.0 ],
+					"text" : "+",
+					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-197",
 					"linecount" : 8,
 					"maxclass" : "message",
@@ -237,10 +273,10 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"bgfillcolor_color" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"bgfillcolor_color1" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"bgfillcolor_color2" : [ 0.178375545095021, 0.170371067957331, 0.158687279162373, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
@@ -266,6 +302,7 @@
 
 					}
 ,
+					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
 					"varname" : "mira_umenu_port"
 				}
 
