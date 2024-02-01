@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
+		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -41,6 +41,152 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 974.756102561950684, 735.487809181213379, 75.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 210.0, 360.0, 75.0, 21.0 ],
+					"text" : "RESET",
+					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"id" : "obj-36",
+					"maxclass" : "number",
+					"minimum" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 990.609761476516724, 659.878051280975342, 75.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 285.0, 75.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number[9]",
+							"parameter_shortname" : "number[9]",
+							"parameter_type" : 3
+						}
+
+					}
+,
+					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"varname" : "mira_take"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 1.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"id" : "obj-114",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.652175754308701, 273.913045763969421, 90.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 270.0, 75.0, 21.0 ],
+					"text" : "Take",
+					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
+					"fontsize" : 36.0,
+					"id" : "obj-112",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 608.292697429656982, 381.951228618621826, 117.0, 49.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 330.0, 435.0, 32.692305743694305, 49.0 ],
+					"text" : "⟲",
+					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"id" : "obj-57",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 974.756102561950684, 809.878054857254028, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 331.463414669036865, 444.268292903900146, 30.0, 30.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "button[8]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "button[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "mira_btn_switchControlMode"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"align" : 0,
+					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"bgfillcolor_color1" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"bgfillcolor_color2" : [ 0.178375545095021, 0.170371067957331, 0.158687279162373, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"id" : "obj-117",
+					"items" : [ "Position", ",", "Speed" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1019.878054857254028, 825.731713771820068, 105.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 450.0, 105.0, 23.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "Position", "Speed" ],
+							"parameter_longname" : "umenu",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "umenu",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"textjustification" : 0,
+					"varname" : "mira_umenu_mode"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-111",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -60,7 +206,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1350.0, 840.0, 165.0, 37.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -471,35 +617,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
-					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
-					"id" : "obj-57",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 974.756102561950684, 809.878054857254028, 30.0, 30.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 446.5, 30.0, 30.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "button[8]",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "button[5]",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "mira_btn_switchControlMode"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -625,23 +742,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
-					"id" : "obj-33",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 974.756102561950684, 735.487809181213379, 75.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 210.0, 360.0, 75.0, 21.0 ],
-					"text" : "RESET",
-					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-105",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -725,23 +825,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
-					"id" : "obj-56",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 990.609761476516724, 645.243904590606689, 75.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 270.0, 75.0, 21.0 ],
-					"text" : "TAKE",
-					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -762,10 +845,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1035.731713771820068, 795.243908166885376, 90.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 270.0, 420.0, 90.0, 21.0 ],
+					"presentation_rect" : [ 225.0, 435.0, 134.756099700927734, 21.0 ],
 					"text" : "Control Mode",
 					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
-					"textjustification" : 2
+					"textjustification" : 0
 				}
 
 			}
@@ -788,7 +871,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bgcolor" : [ 0.341176470588235, 0.282352941176471, 0.32156862745098, 0.0 ],
 					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "comment",
@@ -917,42 +1000,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 435.0, 15.0, 88.0, 23.0 ],
 					"text" : "r #0UDPOut"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
-					"bgfillcolor_color1" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"bgfillcolor_color2" : [ 0.178375545095021, 0.170371067957331, 0.158687279162373, 1.0 ],
-					"bgfillcolor_proportion" : 0.5,
-					"bgfillcolor_type" : "color",
-					"id" : "obj-117",
-					"items" : [ "Position", ",", "Speed" ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 1019.878054857254028, 825.731713771820068, 105.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 255.0, 450.0, 105.0, 23.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "Position", "Speed" ],
-							"parameter_longname" : "umenu",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "umenu",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"varname" : "mira_umenu_mode"
 				}
 
 			}
@@ -1115,34 +1162,6 @@
 					}
 ,
 					"varname" : "mira_btn_takeDown"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
-					"id" : "obj-36",
-					"maxclass" : "number",
-					"minimum" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 990.609761476516724, 659.878051280975342, 75.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 285.0, 75.0, 23.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "number[9]",
-							"parameter_shortname" : "number[9]",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"varname" : "mira_take"
 				}
 
 			}
