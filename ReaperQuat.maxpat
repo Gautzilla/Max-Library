@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
+		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,59 @@
 		"subpatcher_template" : "ManipAliasingSpatial",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
+					"blinkcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
+					"id" : "obj-57",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"outlinecolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 975.0, 615.0, 30.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 225.0, 446.5, 30.0, 30.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "button[8]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "button[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "mira_btn_switchControlMode"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 975.0, 660.0, 24.0, 24.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "toggle",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "toggle"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "newobj",
@@ -120,7 +173,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1155.0, 645.0, 187.0, 37.0 ],
+					"patching_rect" : [ 1155.0, 645.0, 195.0, 37.0 ],
 					"text" : "GUIforward mira_umenu_mode controller::radbtn_mode",
 					"varname" : "GUIforward[6]"
 				}
@@ -277,9 +330,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1020.0, 600.0, 90.0, 21.0 ],
+					"patching_rect" : [ 1035.0, 600.0, 90.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 255.0, 420.0, 90.0, 21.0 ],
+					"presentation_rect" : [ 270.0, 420.0, 90.0, 21.0 ],
 					"text" : "Control Mode",
 					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 					"textjustification" : 2
@@ -454,9 +507,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1005.0, 630.0, 105.0, 23.0 ],
+					"patching_rect" : [ 1020.0, 630.0, 105.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 240.0, 450.0, 105.0, 23.0 ],
+					"presentation_rect" : [ 255.0, 450.0, 105.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Position", "Speed" ],
@@ -1696,8 +1749,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-55", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-57", 0 ]
 				}
 
 			}
@@ -1851,6 +1918,8 @@
 			"obj-36" : [ "number[9]", "number[9]", 0 ],
 			"obj-47" : [ "button[5]", "button[5]", 0 ],
 			"obj-49" : [ "button[4]", "button[4]", 0 ],
+			"obj-51" : [ "toggle", "toggle", 0 ],
+			"obj-57" : [ "button[8]", "button[5]", 0 ],
 			"obj-98" : [ "toggle[5]", "toggle[2]", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
