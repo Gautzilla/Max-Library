@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
+		"rect" : [ 35.0, 78.0, 1980.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,44 @@
 		"subpatcher_template" : "ManipAliasingSpatial",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1635.0, 105.0, 150.0, 49.0 ],
+					"text" : "Evite de se mettre en vitesse au moment pile du marqueur"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-67",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1500.0, 105.0, 61.0, 23.0 ],
+					"text" : "pipe 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "Status flags (1: play 2: rec)",
+					"comment" : "Status flags (1: play 2: rec)",
+					"hint" : "Status flags (1: play 2: rec)",
+					"id" : "obj-56",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 45.0, 240.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bubble_outlinecolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
@@ -149,7 +187,6 @@
 			}
 , 			{
 				"box" : 				{
-					"align" : 0,
 					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -180,7 +217,6 @@
 					}
 ,
 					"textcolor" : [ 0.682352941176471, 0.364705882352941, 0.250980392156863, 1.0 ],
-					"textjustification" : 0,
 					"varname" : "mira_umenu_mode"
 				}
 
@@ -261,7 +297,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1530.0, 840.0, 187.0, 23.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 121 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -292,7 +328,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1530.0, 750.0, 61.0, 23.0 ],
+					"patching_rect" : [ 1530.0, 750.0, 74.0, 23.0 ],
 					"text" : "r #0quat"
 				}
 
@@ -304,7 +340,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 390.0, 420.0, 61.0, 23.0 ],
+					"patching_rect" : [ 390.0, 420.0, 74.0, 23.0 ],
 					"text" : "s #0quat"
 				}
 
@@ -439,7 +475,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1079.83051061630249, 254.661017656326294, 147.0, 23.0 ],
+					"patching_rect" : [ 1079.83051061630249, 254.661017656326294, 160.0, 23.0 ],
 					"text" : "r #0mira_refreshPorts"
 				}
 
@@ -451,7 +487,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 615.0, 780.0, 147.0, 23.0 ],
+					"patching_rect" : [ 615.0, 780.0, 160.0, 23.0 ],
 					"text" : "s #0mira_refreshPorts"
 				}
 
@@ -463,7 +499,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 630.0, 749.661017656326294, 121.0, 23.0 ],
+					"patching_rect" : [ 630.0, 749.661017656326294, 134.0, 23.0 ],
 					"text" : "s #0frommira_port"
 				}
 
@@ -476,7 +512,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 630.0, 689.491524696350098, 107.0, 23.0 ],
+					"patching_rect" : [ 630.0, 689.491524696350098, 121.0, 23.0 ],
 					"text" : "r #0tomira_port"
 				}
 
@@ -501,7 +537,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1079.83051061630249, 464.830514192581177, 121.0, 23.0 ],
+					"patching_rect" : [ 1079.83051061630249, 464.830514192581177, 134.0, 23.0 ],
 					"text" : "r #0frommira_port"
 				}
 
@@ -513,7 +549,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1079.83051061630249, 435.169496536254883, 107.0, 23.0 ],
+					"patching_rect" : [ 1079.83051061630249, 435.169496536254883, 121.0, 23.0 ],
 					"text" : "s #0tomira_port"
 				}
 
@@ -812,7 +848,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1471.097577810287476, 705.000003576278687, 121.0, 23.0 ],
-					"restore" : [ 3 ],
+					"restore" : [ 7 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -847,8 +883,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 225.0, 435.0, 134.756099700927734, 21.0 ],
 					"text" : "Control Mode",
-					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
-					"textjustification" : 0
+					"textcolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ]
 				}
 
 			}
@@ -1240,7 +1275,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1500.0, 105.0, 121.0, 23.0 ],
+					"patching_rect" : [ 1500.0, 135.0, 121.0, 23.0 ],
 					"text" : "s #0controlMode"
 				}
 
@@ -1437,7 +1472,7 @@
 					"comment" : "Toggle YPR output",
 					"hint" : "Toggle YPR output",
 					"id" : "obj-26",
-					"index" : 0,
+					"index" : 6,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1452,7 +1487,7 @@
 					"comment" : "Control mode (0 : position ; 1 : speed)",
 					"hint" : "Control mode (0 : position ; 1 : speed)",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 7,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1467,7 +1502,7 @@
 					"comment" : "Take index",
 					"hint" : "Take index",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1531,7 +1566,7 @@
 					"comment" : "T3 orientation (Quaternion)",
 					"hint" : "T3 orientation (Quaternion)",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1545,7 +1580,7 @@
 					"comment" : "Toggle if controlling",
 					"hint" : "Toggle if controlling",
 					"id" : "obj-18",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1559,7 +1594,7 @@
 					"comment" : "bang for T3 offset reset",
 					"hint" : "bang for T3 offset reset",
 					"id" : "obj-17",
-					"index" : 0,
+					"index" : 8,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1574,7 +1609,7 @@
 					"comment" : "Toggle YPR input",
 					"hint" : "Toggle YPR input",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1589,7 +1624,7 @@
 					"comment" : "Time between each take (s)",
 					"hint" : "Time between each take (s)",
 					"id" : "obj-78",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1604,7 +1639,7 @@
 					"comment" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"hint" : "Create a new take (marker i in Reaper) and moves cursor to it",
 					"id" : "obj-75",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1619,7 +1654,7 @@
 					"comment" : "Toggle rec",
 					"hint" : "Toggle rec",
 					"id" : "obj-74",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1634,7 +1669,7 @@
 					"comment" : "Toggle play. port i sets udpsend port to i",
 					"hint" : "Toggle play. port i sets udpsend port to i",
 					"id" : "obj-73",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1909,7 +1944,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1485.0, 15.0, 180.0, 120.0 ],
+					"patching_rect" : [ 1485.0, 15.0, 180.0, 165.0 ],
 					"proportion" : 0.5,
 					"prototypename" : "backgroundPanel"
 				}
@@ -2250,6 +2285,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -2258,6 +2294,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -2403,6 +2447,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"source" : [ "obj-67", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -2438,7 +2489,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
+					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-79", 0 ]
 				}
 
@@ -2514,126 +2565,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-107" : [ "toggle[6]", "toggle[2]", 0 ],
-			"obj-117" : [ "umenu", "umenu", 0 ],
-			"obj-12" : [ "toggle[2]", "toggle[2]", 0 ],
-			"obj-169" : [ "umenu[2]", "umenu[1]", 0 ],
-			"obj-189" : [ "button[9]", "button[5]", 0 ],
-			"obj-29" : [ "button[7]", "button[5]", 0 ],
-			"obj-31" : [ "toggle[3]", "toggle[2]", 0 ],
-			"obj-36" : [ "number[9]", "number[9]", 0 ],
-			"obj-47" : [ "button[5]", "button[5]", 0 ],
-			"obj-49" : [ "button[4]", "button[4]", 0 ],
-			"obj-51" : [ "toggle", "toggle", 0 ],
-			"obj-57" : [ "button[8]", "button[5]", 0 ],
-			"obj-68" : [ "slider", "slider", 0 ],
-			"obj-98" : [ "toggle[5]", "toggle[2]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "Differentiate.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GUIforward.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "GUIforwardBang.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MovingAverage.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionAngularDifference.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionInnerProduct.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuaternionOrigin.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperMIDICtrl.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ReaperRecorder.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3Import.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "T3ToQuaternion.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "UDPSender.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "YPR_UDP.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Max-Library",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"boxgroups" : [ 			{
 				"boxes" : [ "obj-190", "obj-189" ]
 			}
