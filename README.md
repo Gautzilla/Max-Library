@@ -6,6 +6,7 @@
 | :------------ | :------------ |
 | Differentiate.maxpat  | Outputs the differentiate (di/dt) of the input floats.  |
 | Extremes.maxpat  | Outputs the minimum and maximum of the input values.  |
+| FileCheck.maxpat  | Checks if a filename already exists, rename it otherwise.  |
 | GUIforward.maxpat  | Binds two GUI objects.  |
 | GUIforwardBang.maxpat  | Binds two GUI objects that do not display a state.  |
 | ListBucket.maxpat  | Buckets lists, outputting the current and previous input lists.  |
