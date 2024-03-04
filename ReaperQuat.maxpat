@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
+		"rect" : [ 35.0, 78.0, 466.0, 501.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -102,6 +102,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle_play",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle_play",
 							"parameter_type" : 2
 						}
@@ -348,6 +349,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[2]",
 							"parameter_type" : 2
 						}
@@ -457,6 +459,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[6]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[1]",
 							"parameter_type" : 2
 						}
@@ -552,6 +555,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[9]",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "number[9]",
 							"parameter_type" : 3
 						}
@@ -588,9 +592,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 608.292697429656982, 381.951228618621826, 117.0, 49.0 ],
+					"patching_rect" : [ 608.292697429656982, 381.951228618621826, 117.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 330.0, 435.0, 32.692305743694305, 49.0 ],
+					"presentation_rect" : [ 325.66843968629837, 434.759345591068268, 40.0, 54.0 ],
 					"text" : "⟲",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -616,6 +620,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[8]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[5]",
 							"parameter_type" : 2
 						}
@@ -651,6 +656,7 @@
 							"parameter_enum" : [ "Position", "Speed" ],
 							"parameter_longname" : "umenu",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "umenu",
 							"parameter_type" : 2
 						}
@@ -738,7 +744,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1530.0, 840.0, 187.0, 23.0 ],
-					"restore" : [ 5 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -803,6 +809,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "slider",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "slider",
 							"parameter_type" : 0
 						}
@@ -870,9 +877,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.27118706703186, 351.694923639297485, 117.0, 49.0 ],
+					"patching_rect" : [ 26.27118706703186, 351.694923639297485, 117.0, 54.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.833329975605011, 317.083325773477554, 32.692305743694305, 49.0 ],
+					"presentation_rect" : [ 136.363632380962372, 317.11229020357132, 40.0, 54.0 ],
 					"text" : "⟲",
 					"textcolor" : [ 0.247058823529412, 0.305882352941176, 0.309803921568627, 1.0 ],
 					"textjustification" : 1
@@ -898,6 +905,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[9]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[5]",
 							"parameter_type" : 2
 						}
@@ -1068,6 +1076,7 @@
 							"parameter_enum" : [ "port COM4", "port COM1" ],
 							"parameter_longname" : "umenu[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "umenu[1]",
 							"parameter_type" : 2
 						}
@@ -1106,6 +1115,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle",
 							"parameter_type" : 2
 						}
@@ -1289,7 +1299,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1471.097577810287476, 705.000003576278687, 121.0, 23.0 ],
-					"restore" : [ 19 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1497,6 +1507,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle[6]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle[2]",
 							"parameter_type" : 2
 						}
@@ -1525,6 +1536,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle[2]",
 							"parameter_type" : 2
 						}
@@ -1602,6 +1614,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[4]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[4]",
 							"parameter_type" : 2
 						}
@@ -1631,6 +1644,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[5]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[5]",
 							"parameter_type" : 2
 						}
@@ -1659,6 +1673,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle[3]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle[2]",
 							"parameter_type" : 2
 						}
@@ -1687,6 +1702,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "toggle[2]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "toggle[2]",
 							"parameter_type" : 2
 						}
@@ -2252,6 +2268,7 @@
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_longname" : "button[7]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "button[5]",
 							"parameter_type" : 2
 						}
@@ -3275,10 +3292,6 @@
 					"source" : [ "obj-94", 0 ]
 				}
 
-			}
- ],
-		"boxgroups" : [ 			{
-				"boxes" : [ "obj-190", "obj-189" ]
 			}
  ],
 		"patchlinecolor" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
