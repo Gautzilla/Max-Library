@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
+		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -2394,7 +2394,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"patching_rect" : [ 90.0, 150.0, 285.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 285.0, 105.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 285.0, 120.0 ],
 					"varname" : "recorder",
 					"viewvisibility" : 1
 				}
@@ -2436,7 +2436,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 165.0, 390.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 450.0, 120.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 450.0, 135.0 ],
 					"proportion" : 0.5
 				}
 
