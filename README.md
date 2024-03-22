@@ -14,6 +14,7 @@
 | QuaternionAngularDifference.maxpat   | Computes the rotation angle between two quaternions: $\cos^{-1}(2\left \langle  q_1,q_2 \right \rangle^2 - 1)$|
 | QuaternionDistance.maxpat  | Computes a distance indicator between two quaternions:  $1 - \left \langle q_1,q_2 \right \rangle ^2$  |
 | QuaternionInnerProduct.maxpat  | Computes the inner product $\left \langle  q_1,q_2 \right \rangle$ between two quaternions: $w_1w_2 + x_1x_2 + y_1y_2 + z_1z_2$  |
+| QuaternionInverse.maxpat  | Computes the inverse of a quaternion.  |
 | QuaternionOrigin.maxpat  |  Resets the quaternion origin on bang, according to the input quaternion. |
 | QuaternionToToscA.maxpat  |  Sends quaternions as euler angles to ToscA, for writing YPR automations. |
 | ReaperQuat.maxpat|  Combines ReaperRecorder with ReaperYawPitchRoll for easily recording YPR info on VST automations.  |
