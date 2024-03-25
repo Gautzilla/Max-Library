@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
+		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -551,33 +551,22 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-319",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 2100.0, 315.0, 41.0, 23.0 ],
-					"text" : "t b s"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
 					"id" : "obj-318",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 2100.0, 360.0, 114.0, 23.0 ],
+					"patching_rect" : [ 2100.0, 345.0, 74.0, 37.0 ],
 					"restore" : [ "C:/Users/labsticc/Documents/Manips/Gauthier/Directivité/MaxMSP/headRots/" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "pattr folderName",
-					"varname" : "folderName[1]"
+					"text" : "pattr _ folderName",
+					"varname" : "_"
 				}
 
 			}
@@ -738,7 +727,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.811764705882353, 0.494117647058824, 0.247058823529412, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2100.0, 255.0, 24.0, 24.0 ],
+					"patching_rect" : [ 2100.0, 285.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 135.0, 30.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
@@ -764,7 +753,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 2100.0, 285.0, 121.0, 23.0 ],
+					"patching_rect" : [ 2100.0, 315.0, 121.0, 23.0 ],
 					"text" : "opendialog folder"
 				}
 
@@ -2891,7 +2880,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-319", 0 ],
+					"destination" : [ "obj-318", 0 ],
 					"source" : [ "obj-125", 0 ]
 				}
 
@@ -3312,20 +3301,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-235", 0 ],
 					"source" : [ "obj-318", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-318", 0 ],
-					"source" : [ "obj-319", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-318", 0 ],
-					"source" : [ "obj-319", 0 ]
 				}
 
 			}
