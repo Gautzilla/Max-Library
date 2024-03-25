@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
+		"rect" : [ 35.0, 78.0, 1474.0, 993.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,27 @@
 		"subpatcher_template" : "ManipAliasingSpatial",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 765.0, 480.0, 68.0, 23.0 ],
+					"restore" : 					{
+						"btn_clearTake" : [ 0.0 ],
+						"deleteTakeActionID" : [ "_0a651235823b6a4eb6cf849176b974be" ],
+						"toggle_play" : [ 0 ],
+						"toggle_rec" : [ 0 ],
+						"toggle_rec[1]" : [ 0 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u036005626"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"id" : "obj-107",
@@ -914,7 +935,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 570.0, 195.0, 75.0, 37.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 1 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0

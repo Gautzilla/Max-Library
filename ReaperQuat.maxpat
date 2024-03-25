@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1474.0, 993.0 ],
+		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -397,7 +397,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 236.45160585641861, 279.999991655349731, 30.0, 21.0 ],
+					"patching_rect" : [ 236.0, 325.0, 30.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 270.798892825841904, 298.07161957025528, 45.0, 21.0 ],
 					"text" : "x",
@@ -531,7 +531,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 285.0, 55.0, 23.0 ],
+					"patching_rect" : [ 210.0, 330.0, 55.0, 23.0 ],
 					"text" : "pv take"
 				}
 
@@ -903,7 +903,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 240.0, 30.0, 30.0 ]
+					"patching_rect" : [ 45.0, 285.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -961,7 +961,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 315.0, 90.0, 21.0 ],
+					"patching_rect" : [ 210.0, 360.0, 90.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 225.0, 270.0, 75.0, 21.0 ],
 					"text" : "Take",
@@ -2128,7 +2128,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 240.0, 88.0, 23.0 ],
+					"patching_rect" : [ 90.0, 285.0, 88.0, 23.0 ],
 					"text" : "s #0status"
 				}
 
@@ -2173,7 +2173,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 240.0, 30.0, 30.0 ]
+					"patching_rect" : [ 210.0, 285.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -2222,7 +2222,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 285.187160074710846, 239.839569568634033, 95.0, 23.0 ],
+					"patching_rect" : [ 285.0, 285.0, 95.0, 23.0 ],
 					"text" : "s #0UDPPort"
 				}
 
@@ -2393,7 +2393,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int", "", "" ],
-					"patching_rect" : [ 90.0, 150.0, 285.0, 75.0 ],
+					"patching_rect" : [ 90.0, 150.0, 285.0, 120.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 285.0, 120.0 ],
 					"varname" : "recorder",
