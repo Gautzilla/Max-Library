@@ -38,7 +38,11 @@ def parse_colors(gimp_palette):
     for line in gimp_palette.split("\n"):
         match = re.search(r"^(\s*\d{1,3}){3}", line)
         if match:
-            rgb_values = [float((int(i))/255) for i in match.group(0).split(' ') if i]
+            values = match.group(0)
+            for delimiter in [' ', '\t']:
+                values = ' '.join(values.split(delimiter))
+            values.split()
+            rgb_values = [float((int(i))/255) for i in values if i]
             colors.append(rgb_values)
     return colors
 
