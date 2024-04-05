@@ -79,10 +79,9 @@ def create_maxpalette_from_gpl(gimp_palette_path, max_palette_name):
     f.close()
 
 def main():
-    gimp_palette_path = r"c:\Users\User\Desktop\palettes\flat-ui.gpl"
-    max_palette_name = "Flat_UI"
-    create_maxpalette_from_gpl(gimp_palette_path, max_palette_name)
+    gpl_palette_path = input('Path of the gpl palette file:\r\n').strip('"\'')
+    max_palette_name = input('\rName of the maxpalette file to write:\r\n').strip('"\' ')
+    create_maxpalette_from_gpl(gpl_palette_path, max_palette_name)
 
 if __name__ == "__main__":
     main()
-    
