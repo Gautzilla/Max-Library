@@ -41,7 +41,7 @@ def parse_colors(gimp_palette):
             values = match.group(0)
             for delimiter in [' ', '\t']:
                 values = ' '.join(values.split(delimiter))
-            values.split()
+            values = values.split()
             rgb_values = [float((int(i))/255) for i in values if i]
             colors.append(rgb_values)
     return colors
