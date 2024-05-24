@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 84.0, 1474.0, 979.0 ],
+		"rect" : [ 35.0, 84.0, 466.0, 501.0 ],
 		"openrect" : [ 0.0, 0.0, 466.04278028011322, 501.058822154998779 ],
 		"bglocked" : 1,
 		"openinpresentation" : 1,
@@ -1686,7 +1686,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1471.097577810287476, 705.000003576278687, 121.0, 23.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 5 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2596,11 +2596,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1605.0, 870.0, 236.0, 119.0 ],
+					"patching_rect" : [ 1605.0, 870.0, 237.0, 119.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 36.201468467712402, 298.666667103767395, 328.0, 81.0 ],
-					"text" : "Dans cette pièce, il y a : à gauche : un évier ; au plafond : un luminaire ; au sol : de la moquette et à droite : une étagère.",
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 36.201468467712402, 287.0, 328.0, 100.0 ],
+					"text" : "Close Front TRUE \rDans cette pièce, il y a : à droite : une étagère ; à gauche : une table ; au plafond : des moulures et au sol : du carrelage.",
 					"textcolor" : [ 0.901960784313726, 0.494117647058824, 0.133333333333333, 1.0 ],
 					"textjustification" : 1
 				}
