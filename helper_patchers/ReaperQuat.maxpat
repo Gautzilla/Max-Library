@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -1686,7 +1686,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1471.097577810287476, 705.000003576278687, 121.0, 23.0 ],
-					"restore" : [ 5 ],
+					"restore" : [ 4 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -2592,15 +2592,15 @@
 					"bgcolor" : [ 0.172549019607843, 0.211764705882353, 0.223529411764706, 1.0 ],
 					"fontsize" : 16.0,
 					"id" : "obj-134",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1605.0, 870.0, 237.0, 119.0 ],
+					"patching_rect" : [ 1605.0, 870.0, 246.0, 81.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 5,
-					"presentation_rect" : [ 36.201468467712402, 287.0, 328.0, 100.0 ],
-					"text" : "Close Front TRUE \rDans cette pièce, il y a : à droite : une étagère ; à gauche : une table ; au plafond : des moulures et au sol : du carrelage.",
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 33.201468467712402, 292.999999284744263, 334.0, 63.0 ],
+					"text" : "Close Front TRUE \rNon, je n'ai jamais vu Incendies, mais oui, j'ai déjà vu Le Prestige.",
 					"textcolor" : [ 0.901960784313726, 0.494117647058824, 0.133333333333333, 1.0 ],
 					"textjustification" : 1
 				}

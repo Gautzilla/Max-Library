@@ -3,15 +3,15 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1362.0, 939.0 ],
-		"bglocked" : 0,
+		"rect" : [ 35.0, 78.0, 1362.0, 939.0 ],
+		"bglocked" : 1,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 1,
@@ -37,7 +37,21 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "ManipAliasingSpatial",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.823529411764706, 0.788235294117647, 0.647058823529412, 1.0 ],
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 795.0, 315.0, 134.0, 23.0 ],
+					"text" : "pv _clearTakeAction"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"annotation" : "Automation mode while recording. 0: Read ; 1: Write",
 					"comment" : "Automation mode while recording. 0: Read ; 1: Write",
@@ -87,7 +101,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1050.0, 675.0, 48.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.571426391601563, 75.274726867675781, 105.0, 21.0 ],
+					"presentation_rect" : [ 38.571426391601562, 75.274726867675781, 105.0, 21.0 ],
 					"text" : "write auto",
 					"textcolor" : [ 0.780392169952393, 0.482352942228317, 0.345098048448563, 1.0 ],
 					"textjustification" : 1
@@ -106,7 +120,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1005.0, 690.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 79.071426391601563, 60.274726867675781, 24.0, 24.0 ],
+					"presentation_rect" : [ 79.071426391601562, 60.274726867675781, 24.0, 24.0 ],
 					"uncheckedcolor" : [ 0.294117647058824, 0.447058823529412, 0.431372549019608, 1.0 ],
 					"varname" : "toggle_auto_rec"
 				}
@@ -232,7 +246,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 765.0, 315.0, 29.5, 23.0 ],
+					"patching_rect" : [ 765.0, 360.0, 29.5, 23.0 ],
 					"text" : "$2"
 				}
 
@@ -245,7 +259,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 765.0, 345.00000125169754, 150.0, 37.0 ],
+					"patching_rect" : [ 765.0, 390.0, 150.0, 37.0 ],
 					"text" : "combine t/action/ ID @triggers 1"
 				}
 
@@ -354,7 +368,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 765.0, 389.705885469913483, 68.0, 23.0 ],
+					"patching_rect" : [ 765.0, 435.0, 68.0, 23.0 ],
 					"text" : "s #0UDP"
 				}
 
@@ -1084,7 +1098,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 570.0, 195.0, 75.0, 37.0 ],
-					"restore" : [ 1 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -1176,6 +1190,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-70",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "UDPSender.maxpat",
 					"numinlets" : 2,
@@ -2114,7 +2129,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
+					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -2669,7 +2684,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-99", 0 ],
+					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -2776,6 +2791,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-88", 1 ],
 					"source" : [ "obj-97", 0 ]
 				}
@@ -2783,7 +2805,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
+					"destination" : [ "obj-96", 0 ],
 					"source" : [ "obj-99", 0 ]
 				}
 
